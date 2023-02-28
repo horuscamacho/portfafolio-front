@@ -1,0 +1,283 @@
+:root {
+    --black: #272727;
+    --yellow: #FED766;
+    --blue: #009FB7;
+    --gray: #696773;
+    --white: #EFF1F3;
+}
+
+/*
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Oxygen', sans-serif;
+*/
+
+@media all and (max-width: 550px) and (min-width: 350px) {
+    .container {
+        width: 100%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 10% 33% 13% 7% 37%;
+    }
+    .container_text {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 52% 38%;
+    }
+    .container_text_title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .container_text_title p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 14px;
+        color: var(--gray);
+        font-weight: bolder;
+    }
+    .container_text_subtitle {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: grid;
+        align-content: center;
+    }
+    .container_text_subtitle p {
+        font-family: 'Oxygen', sans-serif;
+        color: var(--white);
+        font-weight: bolder;
+        font-size: 27px;
+        line-height: 26px;
+        margin: 0;
+        padding: 0;
+    }
+    .container_text_description {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: grid;
+    }
+    .container_text_description p {
+        font-family: 'Oxygen', sans-serif;
+        color: var(--gray);
+        line-height: 24px;
+        margin: 0;
+    }
+    .experience_container {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 10% 40% 40% 10%;
+    }
+    .experience_container_bg {
+        grid-column: 2 / 4;
+        grid-row: 1 / 4;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .experience_container_bg p {
+        color: var(--gray);
+        font-size: 60px;
+        margin: 0;
+        padding: 0;
+        transform: rotate(-15deg);
+        font-family: 'Covered By Your Grace', cursive;
+        opacity: 30%;
+    }
+    .experience_container_years {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        justify-items: center;
+    }
+    .experience_container_years p:nth-child(1) {
+        margin: 0;
+        padding: 0;
+        font-size: 21px;
+        color: var(--yellow);
+    }
+    .experience_container_years p:not(:nth-child(1)){
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        color: var(--white);
+    }
+    .experience_container_certificates {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        display: grid;
+        justify-items: center;
+    }
+    .experience_container_certificates p:nth-child(1){
+        margin: 0;
+        padding: 0;
+        font-size: 21px;
+        color: var(--yellow);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .experience_container_certificates p:not(:nth-child(1)) {
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+        color: var(--white);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .tools_container {
+        grid-column: 2 / 4;
+        grid-row: 5/ 6;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .tools_container_logos {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-content: start;
+    }
+    .tools_container_logos img {
+        width: 30px;
+    }
+}
+
+@media all and (max-width: 1200px) and (min-width: 540px) {
+    .container {
+        width: 100%;
+        height: 900px;
+        display: grid;
+        grid-template-columns: 10% 40% 40% 10%;
+        grid-template-rows: 10% 33% 13% 7% 37%;
+    }
+    .container_text {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 49% 35%;
+    }
+    .container_text_title {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .container_text_title p {
+        margin: 0;
+        padding: 0;
+        font-family: 'Oxygen', sans-serif;
+        font-size: 24px;
+        color: var(--gray);
+
+    }
+    .container_text_subtitle {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: grid;
+        align-content: center;
+    }
+    .container_text_subtitle p {
+        font-family: 'Oxygen', sans-serif;
+        color: var(--white);
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+    }
+    .container_text_description {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        display: grid;
+    }
+    .container_text_description p {
+        font-family: 'Oxygen', sans-serif;
+        color: var(--gray);
+        font-size: 24px;
+        line-height: 35px;
+        margin: 0;
+    }
+    .experience_container {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 10% 40% 40% 10%;
+    }
+    .experience_container_bg {
+        grid-column: 2 / 4;
+        grid-row: 1 / 4;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .experience_container_bg p {
+        color: var(--gray);
+        font-size: 100px;
+        margin: 0;
+        padding: 0;
+        transform: rotate(-15deg);
+        font-family: 'Covered By Your Grace', cursive;
+        opacity: 30%;
+    }
+    .experience_container_years {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        justify-items: center;
+    }
+    .experience_container_years p:nth-child(1) {
+        margin: 0;
+        padding: 0;
+        font-size: 42px;
+        color: var(--yellow);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .experience_container_years p:not(:nth-child(1)){
+        margin: 0;
+        padding: 0;
+        font-size: 31px;
+        color: var(--white);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .experience_container_certificates {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        display: grid;
+        justify-items: center;
+    }
+    .experience_container_certificates p:nth-child(1){
+        margin: 0;
+        padding: 0;
+        font-size: 42px;
+        color: var(--yellow);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .experience_container_certificates p:not(:nth-child(1)) {
+        margin: 0;
+        padding: 0;
+        font-size: 31px;
+        color: var(--white);
+        font-family: 'Oxygen', sans-serif;
+    }
+    .tools_container {
+        grid-column: 2 / 4;
+        grid-row: 5/ 6;
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .tools_container_logos {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        align-content: start;
+    }
+    .tools_container_logos img {
+        width: 70px;
+    }
+}
