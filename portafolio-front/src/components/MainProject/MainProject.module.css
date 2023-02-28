@@ -16,10 +16,10 @@ font-family: 'Oxygen', sans-serif;
 @media all and (max-width: 550px) and (min-width: 350px) {
     .container {
         width: 100%;
-        height: 800px;
+        height: 600px;
         display: grid;
         grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 10% 40% 40% 10%;
+        grid-template-rows: 60px 240px 240px 60px;
     }
     .header {
         grid-column: 2 / 3;
@@ -79,13 +79,13 @@ font-family: 'Oxygen', sans-serif;
         grid-row: 1 / 6;
     }
     .foto img {
-        max-width: 300px;
+        max-width: 200px;
     }
     .circle_front {
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
-        width: 80px;
-        height: 80px;
+        grid-row: 2 / 4;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         background: var(--blue);
         color: var(--white);
@@ -107,7 +107,7 @@ font-family: 'Oxygen', sans-serif;
     }
     .circle_back {
         grid-column: 4 / 6;
-        grid-row: 5 / 6;
+        grid-row: 4 / 6;
         width: 60px;
         height: 60px;
         border-radius: 50%;
@@ -132,11 +132,16 @@ font-family: 'Oxygen', sans-serif;
     .fullstack_container {
         grid-column: 1 / 4;
         grid-row: 4 / 5;
+
+    }
+
+    .fullstack_container p {
+        margin: 0;
+        font-size: 20px;
         color: var(--white);
         font-family: 'Tilt Warp', cursive;
-        line-height: 0;
-        font-size: 27px;
     }
+
     .fullstack_container p span {
         color: var(--blue);
     }
@@ -145,29 +150,32 @@ font-family: 'Oxygen', sans-serif;
         grid-row: 3 / 4;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 20% 35% 45%;
+        grid-template-rows: 20px 100px 120px;
         align-items: end;
-        font-family: "Oxygen", sans-serif;
     }
     .about_container_title {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
     .about_container_title p {
+        font-family: 'Oxygen', sans-serif;
         color: var(--gray);
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bolder;
+        margin: 0;
+
     }
     .about_container_text {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
     .about_container_text p {
-        font-size: 28px;
+        font-size: 29px;
         color: var(--white);
         font-weight: bold;
         font-family: 'Oxygen', sans-serif;
-        line-height: 24px;
+        line-height: 23px;
+        margin: 0;
     }
     .about_container_description {
         grid-column: 1 / 2;
@@ -175,8 +183,11 @@ font-family: 'Oxygen', sans-serif;
 
     }
     .about_container_description p {
+        font-family: 'Oxygen', sans-serif;
         color: var(--gray);
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
     }
 }
 @media all and (max-width: 1200px) and (min-width: 540px) {

@@ -17,14 +17,15 @@ font-family: 'Oxygen', sans-serif;
         height: 600px;
         display: grid;
         grid-template-columns: 10% 40% 40% 10%;
-        grid-template-rows: 10% 33% 13% 7% 37%;
+        grid-template-rows: 30px 90px 130px 230px 120px;
     }
     .container_text {
+        grid-row: 2 / 4;
         grid-column: 2 / 4;
-        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 52% 38%;
+        grid-template-rows: 20px 110px 80px;
+        align-items: end;
     }
     .container_text_title {
         grid-column: 1 / 2;
@@ -34,7 +35,7 @@ font-family: 'Oxygen', sans-serif;
         margin: 0;
         padding: 0;
         font-family: 'Oxygen', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         color: var(--gray);
         font-weight: bolder;
     }
@@ -48,7 +49,7 @@ font-family: 'Oxygen', sans-serif;
         font-family: 'Oxygen', sans-serif;
         color: var(--white);
         font-weight: bolder;
-        font-size: 27px;
+        font-size: 30px;
         line-height: 26px;
         margin: 0;
         padding: 0;
@@ -61,12 +62,13 @@ font-family: 'Oxygen', sans-serif;
     .container_text_description p {
         font-family: 'Oxygen', sans-serif;
         color: var(--gray);
-        line-height: 24px;
+        font-size: 15px;
+        line-height: 21px;
         margin: 0;
     }
     .experience_container {
         grid-column: 2 / 4;
-        grid-row: 3 / 5;
+        grid-row: 4 / 5;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: 10% 40% 40% 10%;
@@ -91,12 +93,15 @@ font-family: 'Oxygen', sans-serif;
         grid-column: 2 / 3;
         grid-row: 2 / 3;
         display: grid;
+        grid-template-rows: repeat(2, 1fr);
         justify-items: center;
+        align-items: center;
     }
     .experience_container_years p:nth-child(1) {
+        grid-row: 1 / 2;
         margin: 0;
         padding: 0;
-        font-size: 21px;
+        font-size: 47px;
         color: var(--yellow);
     }
     .experience_container_years p:not(:nth-child(1)){
@@ -104,17 +109,20 @@ font-family: 'Oxygen', sans-serif;
         padding: 0;
         font-size: 15px;
         color: var(--white);
+        font-family: 'Oxygen', sans-serif;
     }
     .experience_container_certificates {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
         display: grid;
+        grid-template-rows: repeat(2, 1fr);
         justify-items: center;
+        align-items: center;
     }
     .experience_container_certificates p:nth-child(1){
         margin: 0;
         padding: 0;
-        font-size: 21px;
+        font-size: 47px;
         color: var(--yellow);
         font-family: 'Oxygen', sans-serif;
     }

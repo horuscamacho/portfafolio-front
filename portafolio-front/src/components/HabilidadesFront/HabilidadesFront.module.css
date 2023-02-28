@@ -1,0 +1,14 @@
+@media all and (max-width: 550px) and (min-width: 350px) {
+    .container {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    }
+    .container img {
+        margin: 0;
+        width: 30px;
+    }
+}

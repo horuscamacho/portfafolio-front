@@ -41,18 +41,19 @@
   .main_container_app {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 300px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
   }
 
   .main_container_app .MainProject_container__WnKsx {
     grid-column: 1 / 2;
-    grid-row: 1 / 5;
+    grid-row: 1 / 4;
   }
 
   .main_container_app .Experience_container__fmXJ7 {
     grid-column: 1 / 2;
-    grid-row: 5 / 8;
+    grid-row: 4 / 7;
   }
+
 
 
 
