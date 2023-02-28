@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+@media all and (max-width: 550px) and (min-width: 350px) {
+  .main_container_app {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 300px;
+  }
+
+  .main_container_app .MainProject_container__WnKsx {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+
+  .main_container_app .Experience_container__fmXJ7 {
+    grid-column: 1 / 2;
+    grid-row: 5 / 8;
+  }
+
+
+
+}
+
