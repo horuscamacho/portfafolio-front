@@ -1,5 +1,9 @@
-import React from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
+import React, {useRef} from 'react';
 import styles from './MainProject.module.css'
+import {useVisibility} from "../../Hooks/useVisibility";
+
+
 const {
     container,
     header,
@@ -19,10 +23,15 @@ const {
 } = styles
 
 const photo = require("../../assets/foto.png")
+
+
 function MainProject(props) {
+    const {visibility, setVisibility, efecto} = useVisibility()
+
     return (
-        <div className={container}>
-            <div className={foto_container}>
+        <VisibilitySensor onChange={(isVisible) =>{setVisibility(isVisible)}}>
+            <div style={efecto(100)} className={container}>
+            <div  className={foto_container}>
                 <div className={foto}>
                     <img src={photo} alt="foto_perfil"/>
                 </div>
@@ -49,6 +58,8 @@ function MainProject(props) {
             </div>
 
         </div>
+        </VisibilitySensor>
+
     );
 }
 

@@ -60,11 +60,12 @@ font-family: 'Oxygen', sans-serif;
         display: grid;
     }
     .container_text_description p {
-        font-family: 'Oxygen', sans-serif;
+        font-family: var(--principal);
         color: var(--gray);
         font-size: 15px;
         line-height: 21px;
         margin: 0;
+        text-align: justify;
     }
     .experience_container {
         grid-column: 2 / 4;
@@ -110,6 +111,8 @@ font-family: 'Oxygen', sans-serif;
         font-size: 15px;
         color: var(--white);
         font-family: 'Oxygen', sans-serif;
+        text-align: center;
+        justify-items: center;
     }
     .experience_container_certificates {
         grid-column: 3 / 4;
@@ -132,6 +135,8 @@ font-family: 'Oxygen', sans-serif;
         font-size: 15px;
         color: var(--white);
         font-family: 'Oxygen', sans-serif;
+        text-align: center;
+        justify-items: center;
     }
     .tools_container {
         grid-column: 2 / 4;

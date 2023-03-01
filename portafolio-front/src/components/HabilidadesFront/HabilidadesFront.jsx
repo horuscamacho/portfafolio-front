@@ -1,3 +1,4 @@
+import {motion, AnimatePresence} from "framer-motion";
 import React from 'react';
 import styles from './HabilidadesFront.module.css'
 const javascript = require('../../assets/front/javascript.png')
@@ -13,17 +14,23 @@ const {
     container
 } = styles
 function HabilidadesFront(props) {
+    const {buttonSelected} = props
     return (
-        <div className={container}>
-            <img src={javascript}/>
-            <img src={html}/>
-            <img src={css}/>
-            <img src={tailwind}/>
-            <img src={bootstrap}/>
-            <img src={react}/>
-            <img src={cloudinary}/>
-            <img src={redux}/>
-        </div>
+        <>
+            { buttonSelected === "left" ?
+            <AnimatePresence>
+                <motion.div key="left" initial={{opacity: 0}} animate={{opacity: 1}} exit={{x: -300,opacity: 0}}  className={container}>
+                    <img src={javascript}/>
+                    <img src={html}/>
+                    <img src={css}/>
+                    <img src={tailwind}/>
+                    <img src={bootstrap}/>
+                    <img src={react}/>
+                    <img src={cloudinary}/>
+                    <img src={redux}/>
+                </motion.div>
+            </AnimatePresence> : null }
+        </>
     );
 }
 

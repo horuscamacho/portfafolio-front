@@ -11,7 +11,7 @@ function Habilidades(props) {
     return (
         <div className={container}>
             <div className={container_img}>
-                {buttonSelected === "left" ? <HabilidadesFront /> : <HabilidadesBack />}
+                {buttonSelected === "left" ? <HabilidadesFront buttonSelected={buttonSelected} /> : <HabilidadesBack buttonSelected={buttonSelected} />}
             </div>
         </div>
     );

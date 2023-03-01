@@ -5,6 +5,7 @@ import Habilidades from "./components/Habilidades/Habilidades";
 import BotonesFrontBack from "./components/BotonesFrontBack/BotonesFrontBack";
 import {useState} from "react";
 import {useButtonsFrontBack} from "./Hooks/useButtonsFrontBack";
+import Proyectos from "./components/Proyectos/Proyectos";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Experience />
           <BotonesFrontBack buttonSelected={buttonSelected} setBack={setBack} setFront={setFront}/>
           <Habilidades buttonSelected={buttonSelected} />
+          <Proyectos />
       </div>
   );
 }

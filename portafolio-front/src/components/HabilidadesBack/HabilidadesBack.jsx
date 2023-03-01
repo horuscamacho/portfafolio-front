@@ -1,3 +1,4 @@
+import {motion, AnimatePresence} from "framer-motion";
 import React from 'react';
 import styles from './HabilidadesBack.module.css'
 const express = require('../../assets/back/express.png')
@@ -10,15 +11,22 @@ const {
     container
 } = styles
 function HabilidadesBack(props) {
+    const {buttonSelected} = props
     return (
-        <div className={container}>
-            <img src={javascript}/>
-            <img src={node}/>
-            <img src={express}/>
-            <img src={passport}/>
-            <img src={postgresql}/>
-            <img src={sequelize}/>
-        </div>
+       <>
+           { buttonSelected === "right" ?
+               <AnimatePresence>
+               <motion.div key="right" initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}}  className={container}>
+                   <img src={javascript}/>
+                   <img src={node}/>
+                   <img src={express}/>
+                   <img src={passport}/>
+                   <img src={postgresql}/>
+                   <img src={sequelize}/>
+               </motion.div></AnimatePresence> : null
+           }
+       </>
+
     );
 }
 

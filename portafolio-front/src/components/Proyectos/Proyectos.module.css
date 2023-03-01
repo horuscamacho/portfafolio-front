@@ -1,0 +1,88 @@
+:root {
+    --cursiva: 'Covered By Your Grace', cursive;
+    --principal: 'Oxygen', sans-serif;
+}
+
+
+@media all and (max-width: 550px) and (min-width: 350px) {
+    .container {
+        grid-column: 1 / 2;
+        grid-row: 9 / 12;
+        height: 600px;
+        display: grid;
+        grid-template-columns: 10% 20% 20% 20% 20% 10%;
+        grid-template-rows: 50px 75px 75px 75px 75px 100px 100px 50px;
+    }
+    .title_container{
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+    .title_container p {
+        color: var(--gray);
+    }
+    .img_container {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        gap: 15PX;
+    }
+    .img_container img {
+        width: 90%;
+        border: 0 solid var(--black);
+        border-radius: 12px;
+        scroll-snap-align: center;
+    }
+    .title_course {
+        grid-column: 4 / 6;
+        grid-row: 2 / 3;
+        display: grid;
+        justify-items: center;
+        align-items: end;
+    }
+    .title_course p {
+        margin: 0;
+        color: var(--blue);
+        font-family: var(--cursiva);
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .plataforma_container {
+        grid-column: 4 / 6;
+        grid-row: 3 / 4;
+        display: grid;
+        justify-items: center;
+        align-items: start;
+
+    }
+
+    .plataforma_container a{
+        margin: 0;
+        font-family: var(--cursiva);
+        color: var(--yellow);
+        font-size: 27px;
+        text-align: center;
+    }
+
+    .container_description {
+        grid-column: 2 / 6;
+        grid-row: 4 / 7;
+    }
+
+    .container_description p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 27px;
+        color: var(--white);
+        font-family: var(--principal);
+        text-align: justify;
+        font-weight: lighter;
+        opacity: 70%;
+    }
+
+}

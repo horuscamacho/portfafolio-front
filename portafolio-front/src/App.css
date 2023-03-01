@@ -41,7 +41,7 @@
   .main_container_app {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
   }
 
   .main_container_app .MainProject_container__WnKsx {
